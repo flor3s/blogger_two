@@ -14,8 +14,6 @@ class ArticlesController < ApplicationController
 		@comment = Comment.new
 
 		@comment.article_id = @article.id
-
-		flash.notice = "Comment added!"
 	end	
 
 	def create
